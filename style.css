@@ -1,0 +1,85 @@
+* {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.feature-1 .feature-bg {
+    background-image: url(img-1.jpg);
+}
+
+.feature-2 .feature-bg {
+    background-image: url(img-2.avif);
+}
+
+.feature-3 .feature-bg {
+    background-image: url(img-3.avif);
+}
+
+.feature-4 .feature-bg {
+    background-image: url(img-4.jpg);
+}
+
+.single-feature-item {
+    position: relative;
+    z-index: 1;
+}
+
+.feature-bg {
+    position: absolute;
+    bottom: -50px;
+    left: 25%;
+    width: 50%;
+    height: 100%;
+    content: "";
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.single-feature-item-text {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 0 10px #ddd;
+    position: relative;
+    padding-left: 120px;
+    border-bottom: 3px solid #fe5d3e;
+}
+
+.single-feature-item-text h2 {
+    font-weight: 600;
+    font-size: 25px;
+    color: #000;
+}
+
+.feature-no {
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    font-size: 50px;
+    opacity: 0.3;
+    z-index: 1;
+    font-weight: 700;
+}
+
+.feature-no::after {
+    position: absolute;
+    right: 11px;
+    top: 11px;
+    width: 1px;
+    height: 90px;
+    content:"" ;
+    background-color: #333;
+    transform: rotate(40deg);
+}
+
+.feature-2,.feature-4 .single-feature-item-text {
+    border-color: #2ac893;
+}
+
+.feature-2 .single-feature-item-text {
+    border-color: #2ac893;
+}
